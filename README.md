@@ -46,6 +46,15 @@ To install it, simply add the following line to your Podfile:
 ```ruby
 pod "SpeedLog"
 ```
+
+###[Carthage](https://github.com/Carthage/Carthage)
+
+To integrate SpeedLog into your Xcode project using Carthage, specify it in your Cartfile:
+
+```
+github "kostiakoval/SpeedLog"
+```
+
 ## Future Features
 There are many logging libs I like:
 
