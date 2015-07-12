@@ -7,34 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B53585451B525658005613F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53585441B525658005613F0 /* main.swift */; };
-		B535854A1B52566B005613F0 /* SpeedLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53585491B52566B005613F0 /* SpeedLog.swift */; };
 		B53585541B525723005613F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53585531B525723005613F0 /* AppDelegate.swift */; };
-		B53585561B525723005613F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53585551B525723005613F0 /* ViewController.swift */; };
 		B53585591B525723005613F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53585571B525723005613F0 /* Main.storyboard */; };
 		B535855B1B525723005613F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B535855A1B525723005613F0 /* Images.xcassets */; };
 		B535855E1B525723005613F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B535855C1B525723005613F0 /* LaunchScreen.xib */; };
-		B53585731B525786005613F0 /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53585721B525786005613F0 /* SpeedLog.framework */; };
-		B53585741B525786005613F0 /* SpeedLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B53585721B525786005613F0 /* SpeedLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B535859A1B528CB9005613F0 /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53585991B528CB9005613F0 /* SpeedLog.framework */; };
+		B535859B1B528CB9005613F0 /* SpeedLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B53585991B528CB9005613F0 /* SpeedLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B53585401B525658005613F0 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		B53585751B525786005613F0 /* Embed Frameworks */ = {
+		B53585961B528C3D005613F0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B53585741B525786005613F0 /* SpeedLog.framework in Embed Frameworks */,
+				B535859B1B528CB9005613F0 /* SpeedLog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,34 +30,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B53585421B525658005613F0 /* Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Example; sourceTree = BUILT_PRODUCTS_DIR; };
-		B53585441B525658005613F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B53585491B52566B005613F0 /* SpeedLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedLog.swift; sourceTree = "<group>"; };
 		B535854F1B525723005613F0 /* SpeedLogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedLogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53585521B525723005613F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B53585531B525723005613F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B53585551B525723005613F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B53585581B525723005613F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B535855A1B525723005613F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B535855D1B525723005613F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B53585681B525723005613F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B53585691B525723005613F0 /* SpeedLogExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLogExampleTests.swift; sourceTree = "<group>"; };
-		B53585721B525786005613F0 /* SpeedLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SpeedLog.framework; path = "/Users/konstantin/My_Projects/MyPods/SpeedLog/Example/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos/SpeedLog.framework"; sourceTree = "<absolute>"; };
+		B53585991B528CB9005613F0 /* SpeedLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SpeedLog.framework; path = "/Users/konstantin/My_Projects/MyPods/SpeedLog/Example/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos/SpeedLog.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B535853F1B525658005613F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B535854C1B525723005613F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53585731B525786005613F0 /* SpeedLog.framework in Frameworks */,
+				B535859A1B528CB9005613F0 /* SpeedLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +54,7 @@
 		B535850A1B5251AD005613F0 = {
 			isa = PBXGroup;
 			children = (
-				B53585431B525658005613F0 /* Example */,
 				B53585501B525723005613F0 /* SpeedLogExample */,
-				B53585661B525723005613F0 /* SpeedLogExampleTests */,
 				B53585141B5251AD005613F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,29 +62,17 @@
 		B53585141B5251AD005613F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B53585421B525658005613F0 /* Example */,
 				B535854F1B525723005613F0 /* SpeedLogExample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B53585431B525658005613F0 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				B53585491B52566B005613F0 /* SpeedLog.swift */,
-				B53585441B525658005613F0 /* main.swift */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 		B53585501B525723005613F0 /* SpeedLogExample */ = {
 			isa = PBXGroup;
 			children = (
 				B53585531B525723005613F0 /* AppDelegate.swift */,
-				B53585551B525723005613F0 /* ViewController.swift */,
 				B53585711B525746005613F0 /* UI */,
 				B53585511B525723005613F0 /* Supporting Files */,
-				B53585721B525786005613F0 /* SpeedLog.framework */,
 			);
 			path = SpeedLogExample;
 			sourceTree = "<group>";
@@ -119,24 +80,8 @@
 		B53585511B525723005613F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B53585991B528CB9005613F0 /* SpeedLog.framework */,
 				B53585521B525723005613F0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B53585661B525723005613F0 /* SpeedLogExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				B53585691B525723005613F0 /* SpeedLogExampleTests.swift */,
-				B53585671B525723005613F0 /* Supporting Files */,
-			);
-			path = SpeedLogExampleTests;
-			sourceTree = "<group>";
-		};
-		B53585671B525723005613F0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B53585681B525723005613F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,23 +99,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B53585411B525658005613F0 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B53585461B525658005613F0 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				B535853E1B525658005613F0 /* Sources */,
-				B535853F1B525658005613F0 /* Frameworks */,
-				B53585401B525658005613F0 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Example;
-			productName = Example;
-			productReference = B53585421B525658005613F0 /* Example */;
-			productType = "com.apple.product-type.tool";
-		};
 		B535854E1B525723005613F0 /* SpeedLogExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B535856B1B525723005613F0 /* Build configuration list for PBXNativeTarget "SpeedLogExample" */;
@@ -178,7 +106,7 @@
 				B535854B1B525723005613F0 /* Sources */,
 				B535854C1B525723005613F0 /* Frameworks */,
 				B535854D1B525723005613F0 /* Resources */,
-				B53585751B525786005613F0 /* Embed Frameworks */,
+				B53585961B528C3D005613F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,9 +126,6 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Kostiantyn Koval";
 				TargetAttributes = {
-					B53585411B525658005613F0 = {
-						CreatedOnToolsVersion = 6.4;
-					};
 					B535854E1B525723005613F0 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -219,7 +144,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B53585411B525658005613F0 /* Example */,
 				B535854E1B525723005613F0 /* SpeedLogExample */,
 			);
 		};
@@ -239,20 +163,10 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B535853E1B525658005613F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B535854A1B52566B005613F0 /* SpeedLog.swift in Sources */,
-				B53585451B525658005613F0 /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B535854B1B525723005613F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53585561B525723005613F0 /* ViewController.swift in Sources */,
 				B53585541B525723005613F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,34 +274,6 @@
 			};
 			name = Release;
 		};
-		B53585471B525658005613F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
-			};
-			name = Debug;
-		};
-		B53585481B525658005613F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
-				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
-			};
-			name = Release;
-		};
 		B535856C1B525723005613F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +281,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos",
+					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos/",
+					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/**",
+					"/Users/konstantin/My_Projects/MyPods/SpeedLog/build/Debug-iphoneos",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -402,6 +291,7 @@
 				);
 				INFOPLIST_FILE = SpeedLogExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -413,9 +303,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos",
+					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos/",
+					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/**",
+					"/Users/konstantin/My_Projects/MyPods/SpeedLog/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = SpeedLogExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -431,14 +325,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		B53585461B525658005613F0 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B53585471B525658005613F0 /* Debug */,
-				B53585481B525658005613F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		B535856B1B525723005613F0 /* Build configuration list for PBXNativeTarget "SpeedLogExample" */ = {
 			isa = XCConfigurationList;

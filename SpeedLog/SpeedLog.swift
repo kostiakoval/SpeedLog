@@ -22,13 +22,13 @@ public struct LogMode : RawOptionSetType {
   public var rawValue: UInt { return self.value }
   
   //MARK:- Options
-  static var None: LogMode        { return self(0) }
-  static var FileName: LogMode    { return self(1 << 0) }
-  static var FuncName: LogMode    { return self(1 << 1) }
-  static var Line: LogMode        { return self(1 << 2) }
+  public static var None: LogMode        { return self(0) }
+  public static var FileName: LogMode    { return self(1 << 0) }
+  public static var FuncName: LogMode    { return self(1 << 1) }
+  public static var Line: LogMode        { return self(1 << 2) }
 
 //Helper
-  static var AllOptions: LogMode  { return FileName | FuncName | Line }
+  public static var AllOptions: LogMode  { return FileName | FuncName | Line }
 }
 
 public struct SpeedLog {

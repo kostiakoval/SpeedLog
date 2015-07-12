@@ -15,8 +15,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+    blogLogExamples()
+
     return true
+  }
+  
+  func blogLogExamples() {
+    //V1
+    /*for i in 0...100 {
+    let a = i * 2
+    println(a)
+    } */
+    
+    //V2
+    /*func printNums() {
+    for i in 0...100 {
+    let a = i * 2
+    println(a)
+    }
+    }*/
+    
+    //V3
+    func printNums() {
+      for i in 0...100 {
+        let a = i * 2
+        #if DEBUG
+          println(a)
+        #endif
+      }
+    }
+    
+    //V4
+    
+    func speedPrintNums() {
+      for i in 0...100 {
+        let a = i * 2
+        SpeedLog.println(a)
+        // SpeedLog.print(a)
+      }
+    }
+    
+    
+    //SpeedLog.mode = LogMode.FileName | LogMode.FuncName | LogMode.Line
+    SpeedLog.mode = LogMode.AllOptions
+    
+    //printNums()
+    speedPrintNums()
   }
 }
 

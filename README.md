@@ -4,12 +4,11 @@
 [![License](https://img.shields.io/cocoapods/l/SpeedLog.svg?style=flat)](http://cocoapods.org/pods/SpeedLog)
 [![Platform](https://img.shields.io/cocoapods/p/SpeedLog.svg?style=flat)](http://cocoapods.org/pods/SpeedLog)
 
-**SpeedLog** - Fast Debug logging that can be easily disable and won't have any negative impact on performance optimization  
+**SpeedLog** - Fast Debug logging, easy to disable and improve Swift performance optimization  
 
-The Swift `print` and `println` statements aren't emitted when compiler an app in Release mode with enabled optimization.  
-This prevents Swift from performing optimal code optimization.  
-The SpeedLog uses a preprocessor to remove `print` and `println` when the logs are disabled.  
-This allows Swift compiler to perform optimal code optimization and increase application performance.
+The Swift `print` and `println` statements aren't emitted when compiling in Release mode with enabled optimization. This prevents Swift from performing optimal code optimization.  
+
+The SpeedLog allows you to remove `print` and `println` when the logs are disabled. This allows Swift compiler to perform optimal code optimization and increase application performance.
 
 ## Features
 
@@ -54,8 +53,9 @@ There are many logging libs I like:
 - [CleanroomLogger](https://github.com/emaloney/CleanroomLogger)
 
 But there is one problem with all of them - it's not possible to disable them before compiling Swift code.  
-So the next step is:  
-Get the best features from those libs and integrate them into `SpeedLog`
+
+Next step is:  
+ Get the best features from those libs and integrate them into `SpeedLog`
 
 
 
