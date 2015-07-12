@@ -18,13 +18,13 @@ This allows Swift compiler to perform optimal code optimization and increase app
 - [x] Reach formatting 
 
 ## Usage
-- Import it  
-```
-import SpeedLog
-```
-- Use SpeedLog
+
+Import `SpeedLog` if it's installed as a Framework,  
+use `SpeedLog.print` statements
 
 ```swift
+import SpeedLog
+
 SpeedLog.println("Hello")
 SpeedLog.print(" Super Speed")
 ```
@@ -73,7 +73,7 @@ Also you can contribute by following these guidelines:
 
 ## Author
 
-Kostiantyn Koval, konstantin.koval1@gmail.com  
+[Kostiantyn Koval](http://twitter.com/kostiakoval), thats me :)
 Thanks to [Arthur Ariel Sabintsev](https://github.com/ArtSabintsev) for his [PrintlnMagic](https://github.com/ArtSabintsev/PrintlnMagic) lib  
 
 
