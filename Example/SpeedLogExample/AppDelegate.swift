@@ -15,12 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    blogLogExamples()
+    logExamples()
 
     return true
   }
   
-  func blogLogExamples() {
+  func logExamples() {
     //V1
     /*for i in 0...100 {
     let a = i * 2
