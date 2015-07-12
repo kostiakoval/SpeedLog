@@ -44,6 +44,7 @@ See more details at [Stackoverflow](http://stackoverflow.com/a/24112024/1838875)
 To install it, simply add the following line to your Podfile:
 
 ```ruby
+use_frameworks!
 pod "SpeedLog"
 ```
 
