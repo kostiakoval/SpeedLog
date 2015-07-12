@@ -8,7 +8,6 @@
 
 import Foundation
 
-typealias SLog = SpeedLog
 
 public struct SpeedLog {
   
