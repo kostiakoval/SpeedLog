@@ -1,24 +1,62 @@
 # SpeedLog
 
-[![CI Status](http://img.shields.io/travis/Kostiantyn Koval/SpeedLog.svg?style=flat)](https://travis-ci.org/Kostiantyn Koval/SpeedLog)
 [![Version](https://img.shields.io/cocoapods/v/SpeedLog.svg?style=flat)](http://cocoapods.org/pods/SpeedLog)
 [![License](https://img.shields.io/cocoapods/l/SpeedLog.svg?style=flat)](http://cocoapods.org/pods/SpeedLog)
 [![Platform](https://img.shields.io/cocoapods/p/SpeedLog.svg?style=flat)](http://cocoapods.org/pods/SpeedLog)
 
+**SpeedLog** - Fast Debug logging that can be easily disable and won't have any negative impact on performance optimization  
+
+The Swift `print` and `println` statements aren't emitted when compiler an app in Release mode with enabled optimization.  
+This prevents Swift from performing optimal code optimization.  
+The SpeedLog uses a preprocessor to remove `print` and `println` when the logs are disabled.  
+This allows Swift compiler to perform optimal code optimization and increase application performance.
+
+## Features
+
+- [x] Improves Swift code optimization
+- [x] Easy to disable
+- [x] Reach formatting 
+
 ## Usage
+- Import it  
+```
+import SpeedLog
+```
+- Use SpeedLog
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```swift
+SpeedLog.println("Hello")
+SpeedLog.print(" Super Speed")
+```
 
-## Requirements
+###Enables Log
+
+To enables logs you need to add a Swift Compiler `ENABLE_LOG` flag   
+
+1. Go to: Build Settings -> Swift Compiler - Custom Flags  
+2. Add `-D ENABLE_LOG` flag  
+  
+See more details at [Stackoverflow](http://stackoverflow.com/a/24112024/1838875)
 
 ## Installation
+###[CocoaPods](http://cocoapods.org)
 
-SpeedLog is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "SpeedLog"
 ```
+
+## Contribute
+
+Please open an issue with bugs and missing features, functionality or ideas for improvements.  
+Also you can contribute by following this guidelines:
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create pull request
 
 ## Author
 
