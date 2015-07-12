@@ -46,11 +46,24 @@ To install it, simply add the following line to your Podfile:
 ```ruby
 pod "SpeedLog"
 ```
+## Future Features
+There are many logging libs I like:
+
+- [PrintlnMagic](https://github.com/ArtSabintsev/PrintlnMagic)
+- [Swell](https://github.com/hubertr/Swell)
+- [CleanroomLogger](https://github.com/emaloney/CleanroomLogger)
+
+But there is one problem with all of them - it's not possible to disable them before compiling Swift code.  
+So the next step is:  
+Get the best features from those libs and integrate them into `SpeedLog`
+
+
+
 
 ## Contribute
 
 Please open an issue with bugs and missing features, functionality or ideas for improvements.  
-Also you can contribute by following this guidelines:
+Also you can contribute by following these guidelines:
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -60,7 +73,9 @@ Also you can contribute by following this guidelines:
 
 ## Author
 
-Kostiantyn Koval, konstantin.koval1@gmail.com
+Kostiantyn Koval, konstantin.koval1@gmail.com  
+Thanks to [Arthur Ariel Sabintsev](https://github.com/ArtSabintsev) for his [PrintlnMagic](https://github.com/ArtSabintsev/PrintlnMagic) lib  
+
 
 ## License
 
