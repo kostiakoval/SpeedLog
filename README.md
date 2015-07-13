@@ -84,7 +84,8 @@ Also you can contribute by following these guidelines:
 
 ## Author
 
-[Kostiantyn Koval](http://twitter.com/kostiakoval), thats me :)
+[Kostiantyn Koval](http://twitter.com/kostiakoval), thats me :)  
+
 Thanks to [Arthur Ariel Sabintsev](https://github.com/ArtSabintsev) for his [PrintlnMagic](https://github.com/ArtSabintsev/PrintlnMagic) lib  
 
 
