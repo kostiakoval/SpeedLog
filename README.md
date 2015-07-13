@@ -56,6 +56,10 @@ To integrate SpeedLog into your Xcode project using Carthage, specify it in your
 github "kostiakoval/SpeedLog"
 ```
 
+### Manual
+
+Copy the `SpeedLog.swift` file into your project
+
 ## Future Features
 There are many logging libs I like:
 
@@ -68,7 +72,11 @@ But there is one problem with all of them - it's not possible to disable them be
 Next step is:  
  Get the best features from those libs and integrate them into `SpeedLog`
 
+### To Do:
 
+- [ ] Different log levels (debug, info, verbouse,  etc)
+- [ ] Log to a file
+- [ ] Lazy code evaluation (@autoclosure) for log
 
 
 ## Contribute
