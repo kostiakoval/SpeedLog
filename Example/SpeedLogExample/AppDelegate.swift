@@ -15,52 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    logExamples()
-
+    myFunc()
     return true
   }
-  
-  func logExamples() {
-    //V1
-    /*for i in 0...100 {
-    let a = i * 2
-    println(a)
-    } */
+
+  func myFunc() {
+    SpeedLog.println("Hello")
     
-    //V2
-    /*func printNums() {
-    for i in 0...100 {
-    let a = i * 2
-    println(a)
-    }
-    }*/
-    
-    //V3
-    func printNums() {
-      for i in 0...100 {
-        let a = i * 2
-        #if DEBUG
-          println(a)
-        #endif
-      }
-    }
-    
-    //V4
-    
-    func speedPrintNums() {
-      for i in 0...100 {
-        let a = i * 2
-        SpeedLog.println(a)
-        // SpeedLog.print(a)
-      }
-    }
-    
-    
-    //SpeedLog.mode = LogMode.FileName | LogMode.FuncName | LogMode.Line
     SpeedLog.mode = LogMode.AllOptions
+    SpeedLog.println("Enable All Features")
     
-    //printNums()
-    speedPrintNums()
+    SpeedLog.mode = LogMode.FuncName
+    SpeedLog.println("Show only FunctionName")
+    
+    SpeedLog.mode = LogMode.FuncName | LogMode.FileName
+    SpeedLog.println("Show FunctionName and File name")
+    
+    SpeedLog.mode = LogMode.FuncName | LogMode.FileName | LogMode.Line
+    SpeedLog.println("Show all 3 options :)")
   }
 }
 

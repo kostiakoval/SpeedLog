@@ -19,14 +19,30 @@ The SpeedLog allows you to remove `print` and `println` when the logs are disabl
 
 ## Usage
 
-Import `SpeedLog` if it's installed as a Framework,  
-use `SpeedLog.print` statements
-
 ```swift
 import SpeedLog
-
 SpeedLog.println("Hello")
 SpeedLog.print(" Super Speed")
+```
+
+### Log output Styling
+
+```swift
+SpeedLog.mode = LogMode.FuncName
+SpeedLog.println("Show only FunctionName")
+//myFunc(): Show only FunctionName
+
+SpeedLog.mode = LogMode.FuncName | LogMode.FileName
+SpeedLog.println("Show FunctionName and File name")
+//AppDelegate.myFunc(): Show FunctionName and File name
+
+SpeedLog.mode = LogMode.FuncName | LogMode.FileName | LogMode.Line
+SpeedLog.println("Show all 3 options :)")
+//AppDelegate.myFunc()[35]: Show all 3 options :)
+
+SpeedLog.mode = LogMode.AllOptions
+SpeedLog.println("Enable All Features")
+//AppDelegate.myFunc()[26]: Enable All Features
 ```
 
 ###Enables Log
