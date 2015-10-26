@@ -38,14 +38,14 @@ public struct SpeedLog {
   public static func println<T>(object: T, _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
     #if ENABLE_LOG
       let s = printStringForMode(object, file: file, function: function, line: line)
-      Swift.print(s)
+      Swift.print(s, terminator: "")
     #endif
   }
   
   public static func print<T>(object: T, _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
     #if ENABLE_LOG
       let s = printStringForMode(object, file: file, function: function, line: line)
-      Swift.print(s, terminator: "")
+      Swift.print(s, terminator: "", separator: "")
     #endif
   }
 }

@@ -11,8 +11,6 @@
 		B53585591B525723005613F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53585571B525723005613F0 /* Main.storyboard */; };
 		B535855B1B525723005613F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B535855A1B525723005613F0 /* Images.xcassets */; };
 		B535855E1B525723005613F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B535855C1B525723005613F0 /* LaunchScreen.xib */; };
-		B535859A1B528CB9005613F0 /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53585991B528CB9005613F0 /* SpeedLog.framework */; };
-		B535859B1B528CB9005613F0 /* SpeedLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B53585991B528CB9005613F0 /* SpeedLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +20,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B535859B1B528CB9005613F0 /* SpeedLog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +33,6 @@
 		B53585581B525723005613F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B535855A1B525723005613F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B535855D1B525723005613F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B53585991B528CB9005613F0 /* SpeedLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SpeedLog.framework; path = "/Users/konstantin/My_Projects/MyPods/SpeedLog/Example/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos/SpeedLog.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B535859A1B528CB9005613F0 /* SpeedLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +75,6 @@
 		B53585511B525723005613F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B53585991B528CB9005613F0 /* SpeedLog.framework */,
 				B53585521B525723005613F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -123,7 +117,9 @@
 		B535850B1B5251AD005613F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Kostiantyn Koval";
 				TargetAttributes = {
 					B535854E1B525723005613F0 = {
@@ -214,6 +210,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -278,13 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos",
-					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos/",
-					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/**",
-					"/Users/konstantin/My_Projects/MyPods/SpeedLog/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -292,6 +283,7 @@
 				INFOPLIST_FILE = SpeedLogExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkoval.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -300,16 +292,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos",
-					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/Debug-iphoneos/",
-					"$(SRCROOT)/DerivedData/SpeedLogExample/Build/Products/**",
-					"/Users/konstantin/My_Projects/MyPods/SpeedLog/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SpeedLogExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkoval.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -333,6 +320,7 @@
 				B535856D1B525723005613F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
