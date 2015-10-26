@@ -1,0 +1,14 @@
+PODS:
+  - SpeedLog (0.1.0)
+
+DEPENDENCIES:
+  - SpeedLog (from `../`)
+
+EXTERNAL SOURCES:
+  SpeedLog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SpeedLog: 0ff49df622bf0c984cc438ec62d90cdb12f2547d
+
+COCOAPODS: 0.39.0

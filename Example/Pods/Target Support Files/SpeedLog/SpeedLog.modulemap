@@ -1,0 +1,6 @@
+framework module SpeedLog {
+  umbrella header "SpeedLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
