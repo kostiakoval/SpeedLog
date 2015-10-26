@@ -8,5 +8,5 @@ language: objective-c
 # - pod install --project-directory=Example
 
 script:
-- set -o pipefail && xcodebuild test -workspace SpeedLog.xcworkspace -scheme SpeedLog -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- set -o pipefail && xcodebuild test -workspace Example/SpeedLog.xcworkspace -scheme SpeedLog-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
