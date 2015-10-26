@@ -1,7 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-
-inhibit_all_warnings!
 use_frameworks!
 
-pod 'SpeedLog', :path => "../"
+target 'SpeedLog_Example', :exclusive => true do
+  pod "SpeedLog", :path => "../"
+end
+
+target 'SpeedLog_Tests', :exclusive => true do
+  pod "SpeedLog", :path => "../"
+
+  
+end

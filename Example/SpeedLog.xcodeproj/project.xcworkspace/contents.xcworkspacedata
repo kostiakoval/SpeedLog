@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../SpeedLog.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "self:SpeedLogExample.xcodeproj">
+      location = "self:SpeedLog.xcodeproj">
    </FileRef>
 </Workspace>
