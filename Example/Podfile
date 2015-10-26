@@ -7,6 +7,4 @@ end
 
 target 'SpeedLog_Tests', :exclusive => true do
   pod "SpeedLog", :path => "../"
-
-  
 end
