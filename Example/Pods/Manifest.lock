@@ -1,5 +1,5 @@
 PODS:
-  - SpeedLog (0.1.0)
+  - SpeedLog (0.1.1)
 
 DEPENDENCIES:
   - SpeedLog (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SpeedLog: 0ff49df622bf0c984cc438ec62d90cdb12f2547d
+  SpeedLog: daf9b8613b3297ef9ecfb858b434f22890070f13
 
 COCOAPODS: 0.39.0

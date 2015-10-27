@@ -50,8 +50,10 @@ SpeedLog.println("Enable All Features")
 To enables logs you need to add a Swift Compiler `ENABLE_LOG` flag   
 
 1. Go to: Build Settings -> Swift Compiler - Custom Flags  
-2. Add `-D ENABLE_LOG` flag  
-  
+2. Add `-D ENABLE_LOG` flag   
+
+If you use use `CocoaPods` or `Carthage` you need to enable it for `SpeedLog` framework, not the project itself.  
+
 See more details at [Stackoverflow](http://stackoverflow.com/a/24112024/1838875)
 
 ## Installation
@@ -90,7 +92,7 @@ Next step is:
 
 ### To Do:
 
-- [ ] Different log levels (debug, info, verbouse,  etc)
+- [ ] Different log levels (debug, info, verbose,  etc)
 - [ ] Log to a file
 - [ ] Lazy code evaluation (@autoclosure) for log
 
