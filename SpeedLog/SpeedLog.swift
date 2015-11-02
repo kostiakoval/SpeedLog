@@ -35,27 +35,28 @@ public struct SpeedLog {
   
   public static var mode: LogMode = LogMode.None
   
-  public static func println<T>(object: T, _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
+  public static func print(items: Any..., separator: String = " ", terminator: String = "\n", _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
     #if ENABLE_LOG
-      let s = printStringForMode(object, file: file, function: function, line: line)
-      Swift.print(s, terminator: "")
-    #endif
-  }
-  
-  public static func print<T>(object: T, _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
-    #if ENABLE_LOG
-      let s = printStringForMode(object, file: file, function: function, line: line)
-      Swift.print(s, terminator: "", separator: "")
+      let prefix = printStringForMode(file, function: function, line: line)
+      let items = composeItems(items, separator: separator)
+      Swift.print("\(prefix)\(items)")
     #endif
   }
 }
 
 private extension SpeedLog {
-  static func printStringForMode<T>(object: T, file: String, function: String, line: Int) -> String {
+
+  static func composeItems(items: [Any], separator: String) -> Any {
+    var elements = items
+    let first = elements.removeFirst()
+
+    return elements.reduce(first) { "\($0)\(separator)\($1)" }
+  }
+
+  static func printStringForMode(file: String, function: String, line: Int) -> String {
     var result: String = ""
     //print("\(filename).\(function)[\(line)]: \(object)")
     if mode.contains(.FileName) {
-        
       let filename = file.lastPathComponent.stringByDeletingPathExtension
       result = "\(filename)."
     }
@@ -65,11 +66,11 @@ private extension SpeedLog {
     if mode.contains(.Line) {
       result += "[\(line)]"
     }
-    
+
     if !result.isEmpty {
       result += ": "
     }
-    result += "\(object)"
+
     return result
   }
 }

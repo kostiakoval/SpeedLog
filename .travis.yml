@@ -10,3 +10,8 @@ podfile: Example/Podfile
 script:
 - set -o pipefail && xcodebuild test -workspace Example/SpeedLog.xcworkspace -scheme SpeedLog-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

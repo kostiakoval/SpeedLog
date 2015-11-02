@@ -7,9 +7,9 @@
 
 **SpeedLog** - Fast Debug logging, easy to disable and improve Swift performance optimization  
 
-The Swift `print` and `println` statements aren't emitted when compiling in Release mode with enabled optimization. This prevents Swift from performing optimal code optimization.  
+The Swift `print` statements aren't emitted when compiling in Release mode with enabled optimization. This prevents Swift from performing optimal code optimization.  
 
-The SpeedLog allows you to remove `print` and `println` when the logs are disabled. This allows Swift compiler to perform optimal code optimization and increase application performance.
+The SpeedLog allows you to remove `print` when the logs are disabled. This allows Swift compiler to perform optimal code optimization and increase application performance.
 
 ## Features
 
@@ -21,27 +21,27 @@ The SpeedLog allows you to remove `print` and `println` when the logs are disabl
 
 ```swift
 import SpeedLog
-SpeedLog.println("Hello")
-SpeedLog.print(" Super Speed")
+SpeedLog.print("Hello")
+SpeedLog.print(["Super"], ["Speed"])
 ```
 
 ### Log output Styling
 
 ```swift
 SpeedLog.mode = LogMode.FuncName
-SpeedLog.println("Show only FunctionName")
+SpeedLog.print("Show only FunctionName")
 //myFunc(): Show only FunctionName
 
 SpeedLog.mode = LogMode.FuncName | LogMode.FileName
-SpeedLog.println("Show FunctionName and File name")
+SpeedLog.print("Show FunctionName and File name")
 //AppDelegate.myFunc(): Show FunctionName and File name
 
 SpeedLog.mode = LogMode.FuncName | LogMode.FileName | LogMode.Line
-SpeedLog.println("Show all 3 options :)")
+SpeedLog.print("Show all 3 options :)")
 //AppDelegate.myFunc()[35]: Show all 3 options :)
 
 SpeedLog.mode = LogMode.AllOptions
-SpeedLog.println("Enable All Features")
+SpeedLog.print("Enable All Features")
 //AppDelegate.myFunc()[26]: Enable All Features
 ```
 
