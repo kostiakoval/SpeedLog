@@ -39,7 +39,7 @@ public struct SpeedLog {
     #if ENABLE_LOG
       let prefix = printStringForMode(file, function: function, line: line)
       let items = composeItems(items, separator: separator)
-      Swift.print("\(prefix)\(items)")
+      Swift.print("\(prefix)\(items)", terminator: terminator)
     #endif
   }
 }
