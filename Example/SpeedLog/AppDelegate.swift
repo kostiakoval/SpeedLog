@@ -20,19 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   func myFunc() {
-    SpeedLog.println("Hello")
+    SpeedLog.print("Hello")
 
     SpeedLog.mode = .AllOptions
-    SpeedLog.println("Enable All Features")
+    SpeedLog.print("Enable All Features")
 
     SpeedLog.mode = .FuncName
-    SpeedLog.println("Show only FunctionName")
+    SpeedLog.print("Show only FunctionName")
 
     SpeedLog.mode = [.FuncName, .FileName]
-    SpeedLog.println("Show FunctionName and File name")
+    SpeedLog.print("Show FunctionName and File name")
 
     SpeedLog.mode = [.FuncName, .FileName, .Line]
-    SpeedLog.println("Show all 3 options :)")
+    SpeedLog.print("Show all 3 options :)")
   }
 }
 
