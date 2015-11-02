@@ -20,6 +20,7 @@ SpeedLog.print(["A"], ["B"], 123, ["C"])
 
 SpeedLog.print("Other testing")
 SpeedLog.print("")
+SpeedLog.print()
 
 SpeedLog.print(["Super"], ["Speed"])
 
