@@ -17,3 +17,5 @@ SpeedLog.print(["A"], ["B"])
 
 print(["A"], ["B"], 123, ["C"])
 SpeedLog.print(["A"], ["B"], 123, ["C"])
+
+SpeedLog.print(["Super"], ["Speed"])
