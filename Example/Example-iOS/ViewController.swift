@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  SpeedLog
+//  Example-iOS
 //
-//  Created by Kostiantyn Koval on 10/26/2015.
-//  Copyright (c) 2015 Kostiantyn Koval. All rights reserved.
+//  Created by Kostiantyn Koval on 20/11/15.
+//  Copyright © 2015 Kostiantyn Koval. All rights reserved.
 //
 
 import UIKit
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+
 
 }
 

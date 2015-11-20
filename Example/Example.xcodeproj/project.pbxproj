@@ -7,226 +7,171 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		CD9ECDE43F8F8A03F756F4F1 /* Pods_SpeedLog_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB714F1064192D436D7363A /* Pods_SpeedLog_Tests.framework */; };
-		E7394FBA1818473FD1F926C4 /* Pods_SpeedLog_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548B21B71B0DC9BA6DFD06A2 /* Pods_SpeedLog_Example.framework */; };
+		B5BA46C61BFF666D00EC5A0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46C51BFF666D00EC5A0D /* AppDelegate.swift */; };
+		B5BA46C81BFF666D00EC5A0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46C71BFF666D00EC5A0D /* ViewController.swift */; };
+		B5BA46CB1BFF666D00EC5A0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BA46C91BFF666D00EC5A0D /* Main.storyboard */; };
+		B5BA46CD1BFF666D00EC5A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BA46CC1BFF666D00EC5A0D /* Assets.xcassets */; };
+		B5BA46D01BFF666D00EC5A0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BA46CE1BFF666D00EC5A0D /* LaunchScreen.storyboard */; };
+		B5BA46DC1BFF668700EC5A0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46DB1BFF668700EC5A0D /* main.swift */; };
+		B5BA46E31BFF682700EC5A0D /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */; };
+		B5BA46E41BFF682700EC5A0D /* SpeedLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5BA46E71BFF6A8D00EC5A0D /* SpeedLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46E61BFF6A8D00EC5A0D /* SpeedLog.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = SpeedLog;
+/* Begin PBXCopyFilesBuildPhase section */
+		B5BA46D71BFF668700EC5A0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
 		};
-/* End PBXContainerItemProxy section */
+		B5BA46E51BFF682700EC5A0D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5BA46E41BFF682700EC5A0D /* SpeedLog.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C6405CB68B978CA2B79CAF7 /* Pods-SpeedLog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedLog_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeedLog_Example/Pods-SpeedLog_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2CDC53EAF92EE5175D5AB4AC /* SpeedLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpeedLog.podspec; path = ../SpeedLog.podspec; sourceTree = "<group>"; };
-		4287C2CE72E620DED5CC515B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		46188EE3988365E1E93AFB92 /* Pods-SpeedLog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedLog_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeedLog_Tests/Pods-SpeedLog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		46486F0A4D8317DEA061BAB5 /* Pods-SpeedLog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedLog_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeedLog_Tests/Pods-SpeedLog_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		548B21B71B0DC9BA6DFD06A2 /* Pods_SpeedLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeedLog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD01AFB9204008FA782 /* SpeedLog_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedLog_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* SpeedLog_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLog_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		B577D22D1BE7800900265AD9 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
-		B5D9C3751BDEC18700895908 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
-		DEB714F1064192D436D7363A /* Pods_SpeedLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeedLog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECB9623DA0693E9836DDE42A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F9931646533A16D867C82217 /* Pods-SpeedLog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeedLog_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeedLog_Example/Pods-SpeedLog_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B5BA46C31BFF666D00EC5A0D /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BA46C51BFF666D00EC5A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5BA46C71BFF666D00EC5A0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5BA46CA1BFF666D00EC5A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5BA46CC1BFF666D00EC5A0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5BA46CF1BFF666D00EC5A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5BA46D11BFF666D00EC5A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BA46D91BFF668700EC5A0D /* Example-console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Example-console"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BA46DB1BFF668700EC5A0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SpeedLog.framework; path = "/Users/konstantin/My_Projects/MyPods/SpeedLog/Example/DerivedData/Example/Build/Products/Debug-iphoneos/SpeedLog.framework"; sourceTree = "<absolute>"; };
+		B5BA46E61BFF6A8D00EC5A0D /* SpeedLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeedLog.swift; path = ../../Source/SpeedLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+		B5BA46C01BFF666D00EC5A0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7394FBA1818473FD1F926C4 /* Pods_SpeedLog_Example.framework in Frameworks */,
+				B5BA46E31BFF682700EC5A0D /* SpeedLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		B5BA46D61BFF668700EC5A0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9ECDE43F8F8A03F756F4F1 /* Pods_SpeedLog_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21D81008C6BB0A1118E087AA /* Frameworks */ = {
+		B5BA46AC1BFF663600EC5A0D = {
 			isa = PBXGroup;
 			children = (
-				548B21B71B0DC9BA6DFD06A2 /* Pods_SpeedLog_Example.framework */,
-				DEB714F1064192D436D7363A /* Pods_SpeedLog_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		607FACC71AFB9204008FA782 = {
-			isa = PBXGroup;
-			children = (
-				B577D22D1BE7800900265AD9 /* MyPlayground.playground */,
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for SpeedLog */,
-				607FACE81AFB9204008FA782 /* Tests */,
-				607FACD11AFB9204008FA782 /* Products */,
-				96D19FB2ADB0A6CA185A7F9E /* Pods */,
-				21D81008C6BB0A1118E087AA /* Frameworks */,
+				B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */,
+				B5BA46C41BFF666D00EC5A0D /* Example-iOS */,
+				B5BA46DA1BFF668700EC5A0D /* Example-console */,
+				B5BA46B61BFF663600EC5A0D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		607FACD11AFB9204008FA782 /* Products */ = {
+		B5BA46B61BFF663600EC5A0D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* SpeedLog_Example.app */,
-				607FACE51AFB9204008FA782 /* SpeedLog_Tests.xctest */,
+				B5BA46C31BFF666D00EC5A0D /* Example-iOS.app */,
+				B5BA46D91BFF668700EC5A0D /* Example-console */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for SpeedLog */ = {
+		B5BA46C41BFF666D00EC5A0D /* Example-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				B5BA46C51BFF666D00EC5A0D /* AppDelegate.swift */,
+				B5BA46C71BFF666D00EC5A0D /* ViewController.swift */,
+				B5BA46C91BFF666D00EC5A0D /* Main.storyboard */,
+				B5BA46CC1BFF666D00EC5A0D /* Assets.xcassets */,
+				B5BA46CE1BFF666D00EC5A0D /* LaunchScreen.storyboard */,
+				B5BA46D11BFF666D00EC5A0D /* Info.plist */,
 			);
-			name = "Example for SpeedLog";
-			path = SpeedLog;
+			path = "Example-iOS";
 			sourceTree = "<group>";
 		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+		B5BA46DA1BFF668700EC5A0D /* Example-console */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
+				B5BA46E61BFF6A8D00EC5A0D /* SpeedLog.swift */,
+				B5BA46DB1BFF668700EC5A0D /* main.swift */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				B5D9C3751BDEC18700895908 /* .travis.yml */,
-				2CDC53EAF92EE5175D5AB4AC /* SpeedLog.podspec */,
-				ECB9623DA0693E9836DDE42A /* README.md */,
-				4287C2CE72E620DED5CC515B /* LICENSE */,
-			);
-			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		96D19FB2ADB0A6CA185A7F9E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1C6405CB68B978CA2B79CAF7 /* Pods-SpeedLog_Example.debug.xcconfig */,
-				F9931646533A16D867C82217 /* Pods-SpeedLog_Example.release.xcconfig */,
-				46188EE3988365E1E93AFB92 /* Pods-SpeedLog_Tests.debug.xcconfig */,
-				46486F0A4D8317DEA061BAB5 /* Pods-SpeedLog_Tests.release.xcconfig */,
-			);
-			name = Pods;
+			path = "Example-console";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* SpeedLog_Example */ = {
+		B5BA46C21BFF666D00EC5A0D /* Example-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SpeedLog_Example" */;
+			buildConfigurationList = B5BA46D21BFF666D00EC5A0D /* Build configuration list for PBXNativeTarget "Example-iOS" */;
 			buildPhases = (
-				214A4752A155D8F3089A56AB /* Check Pods Manifest.lock */,
-				607FACCC1AFB9204008FA782 /* Sources */,
-				607FACCD1AFB9204008FA782 /* Frameworks */,
-				607FACCE1AFB9204008FA782 /* Resources */,
-				869DBF6DC360193490B70766 /* Embed Pods Frameworks */,
-				B59EC64077CAE36A21FCA216 /* Copy Pods Resources */,
+				B5BA46BF1BFF666D00EC5A0D /* Sources */,
+				B5BA46C01BFF666D00EC5A0D /* Frameworks */,
+				B5BA46C11BFF666D00EC5A0D /* Resources */,
+				B5BA46E51BFF682700EC5A0D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SpeedLog_Example;
-			productName = SpeedLog;
-			productReference = 607FACD01AFB9204008FA782 /* SpeedLog_Example.app */;
+			name = "Example-iOS";
+			productName = "Example-iOS";
+			productReference = B5BA46C31BFF666D00EC5A0D /* Example-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* SpeedLog_Tests */ = {
+		B5BA46D81BFF668700EC5A0D /* Example-console */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SpeedLog_Tests" */;
+			buildConfigurationList = B5BA46DD1BFF668700EC5A0D /* Build configuration list for PBXNativeTarget "Example-console" */;
 			buildPhases = (
-				3D3854894A52993425B96BF3 /* Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				FD8D8D4C762D67BECF2C45B9 /* Embed Pods Frameworks */,
-				F652BAC435ED28983AC337E8 /* Copy Pods Resources */,
+				B5BA46D51BFF668700EC5A0D /* Sources */,
+				B5BA46D61BFF668700EC5A0D /* Frameworks */,
+				B5BA46D71BFF668700EC5A0D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = SpeedLog_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* SpeedLog_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "Example-console";
+			productName = "Example-console";
+			productReference = B5BA46D91BFF668700EC5A0D /* Example-console */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		607FACC81AFB9204008FA782 /* Project object */ = {
+		B5BA46AD1BFF663600EC5A0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = kkoval;
+				ORGANIZATIONNAME = "Kostiantyn Koval";
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
+					B5BA46C21BFF666D00EC5A0D = {
+						CreatedOnToolsVersion = 7.1.1;
 					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+					B5BA46D81BFF668700EC5A0D = {
+						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SpeedLog" */;
+			buildConfigurationList = B5BA46B01BFF663600EC5A0D /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,181 +179,75 @@
 				en,
 				Base,
 			);
-			mainGroup = 607FACC71AFB9204008FA782;
-			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			mainGroup = B5BA46AC1BFF663600EC5A0D;
+			productRefGroup = B5BA46B61BFF663600EC5A0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* SpeedLog_Example */,
-				607FACE41AFB9204008FA782 /* SpeedLog_Tests */,
+				B5BA46C21BFF666D00EC5A0D /* Example-iOS */,
+				B5BA46D81BFF668700EC5A0D /* Example-console */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACCE1AFB9204008FA782 /* Resources */ = {
+		B5BA46C11BFF666D00EC5A0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B5BA46D01BFF666D00EC5A0D /* LaunchScreen.storyboard in Resources */,
+				B5BA46CD1BFF666D00EC5A0D /* Assets.xcassets in Resources */,
+				B5BA46CB1BFF666D00EC5A0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		214A4752A155D8F3089A56AB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3D3854894A52993425B96BF3 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		869DBF6DC360193490B70766 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeedLog_Example/Pods-SpeedLog_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B59EC64077CAE36A21FCA216 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeedLog_Example/Pods-SpeedLog_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F652BAC435ED28983AC337E8 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeedLog_Tests/Pods-SpeedLog_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD8D8D4C762D67BECF2C45B9 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeedLog_Tests/Pods-SpeedLog_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		607FACCC1AFB9204008FA782 /* Sources */ = {
+		B5BA46BF1BFF666D00EC5A0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B5BA46C81BFF666D00EC5A0D /* ViewController.swift in Sources */,
+				B5BA46C61BFF666D00EC5A0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		B5BA46D51BFF668700EC5A0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				B5BA46E71BFF6A8D00EC5A0D /* SpeedLog.swift in Sources */,
+				B5BA46DC1BFF668700EC5A0D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* SpeedLog_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		B5BA46C91BFF666D00EC5A0D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
+				B5BA46CA1BFF666D00EC5A0D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		B5BA46CE1BFF666D00EC5A0D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				B5BA46CF1BFF666D00EC5A0D /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		607FACED1AFB9204008FA782 /* Debug */ = {
+		B5BA46BA1BFF663600EC5A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -422,9 +261,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -435,24 +274,24 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		607FACEE1AFB9204008FA782 /* Release */ = {
+		B5BA46BB1BFF663600EC5A0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -466,7 +305,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -479,100 +318,94 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B5BA46D31BFF666D00EC5A0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/Example/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "Example-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kk.Example-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5BA46D41BFF666D00EC5A0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/Example/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "Example-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kk.Example-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		607FACF01AFB9204008FA782 /* Debug */ = {
+		B5BA46DE1BFF668700EC5A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C6405CB68B978CA2B79CAF7 /* Pods-SpeedLog_Example.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SpeedLog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "kkoval.SpeedLog-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		607FACF11AFB9204008FA782 /* Release */ = {
+		B5BA46DF1BFF668700EC5A0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9931646533A16D867C82217 /* Pods-SpeedLog_Example.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SpeedLog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "kkoval.SpeedLog-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46188EE3988365E1E93AFB92 /* Pods-SpeedLog_Tests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kkoval.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedLog_Example.app/SpeedLog_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46486F0A4D8317DEA061BAB5 /* Pods-SpeedLog_Tests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kkoval.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedLog_Example.app/SpeedLog_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SpeedLog" */ = {
+		B5BA46B01BFF663600EC5A0D /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACED1AFB9204008FA782 /* Debug */,
-				607FACEE1AFB9204008FA782 /* Release */,
+				B5BA46BA1BFF663600EC5A0D /* Debug */,
+				B5BA46BB1BFF663600EC5A0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SpeedLog_Example" */ = {
+		B5BA46D21BFF666D00EC5A0D /* Build configuration list for PBXNativeTarget "Example-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF01AFB9204008FA782 /* Debug */,
-				607FACF11AFB9204008FA782 /* Release */,
+				B5BA46D31BFF666D00EC5A0D /* Debug */,
+				B5BA46D41BFF666D00EC5A0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SpeedLog_Tests" */ = {
+		B5BA46DD1BFF668700EC5A0D /* Build configuration list for PBXNativeTarget "Example-console" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				B5BA46DE1BFF668700EC5A0D /* Debug */,
+				B5BA46DF1BFF668700EC5A0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+	rootObject = B5BA46AD1BFF663600EC5A0D /* Project object */;
 }
