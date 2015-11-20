@@ -73,6 +73,12 @@ To integrate SpeedLog into your Xcode project using Carthage, specify it in your
 ```
 github "kostiakoval/SpeedLog"
 ```
+**`*`** Carthage builds frameworks in `Release` mode. This mean if you run `carthage update` and include `SpeedLog.framework` to the project no output will be printed to console, because it's not printed in release mode.  
+
+**How to use Carthage with SpeedLog**: 
+ 
+ - Run`carthage checkout`
+ - Open `Carthage/Checkouts/SpeedLog` and add `SpeedLog.xcodeproj` to your project.
 
 ### Manual
 
