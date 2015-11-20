@@ -8,18 +8,17 @@
 
 import Foundation
 
-func myFunc() {
-  SpeedLog.print("Hello")
+SpeedLog.print("Hello")
 
-  SpeedLog.mode = .AllOptions
-  SpeedLog.print("Enable All Features")
+SpeedLog.mode = .AllOptions
+SpeedLog.print("Enable All Features")
 
-  SpeedLog.mode = .FuncName
-  SpeedLog.print("Show only FunctionName")
+SpeedLog.mode = .FuncName
+SpeedLog.print("Show only FunctionName")
 
-  SpeedLog.mode = [.FuncName, .FileName]
-  SpeedLog.print("Show FunctionName and File name")
+SpeedLog.mode = [.FuncName, .FileName]
+SpeedLog.print("Show FunctionName and File name")
 
-  SpeedLog.mode = [.FuncName, .FileName, .Line]
-  SpeedLog.print("Show all 3 options :)")
-}
+SpeedLog.mode = [.FuncName, .FileName, .Line]
+SpeedLog.print("Show all 3 options :)")
+

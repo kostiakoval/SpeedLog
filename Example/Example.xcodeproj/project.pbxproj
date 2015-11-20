@@ -13,10 +13,34 @@
 		B5BA46CD1BFF666D00EC5A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BA46CC1BFF666D00EC5A0D /* Assets.xcassets */; };
 		B5BA46D01BFF666D00EC5A0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BA46CE1BFF666D00EC5A0D /* LaunchScreen.storyboard */; };
 		B5BA46DC1BFF668700EC5A0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46DB1BFF668700EC5A0D /* main.swift */; };
-		B5BA46E31BFF682700EC5A0D /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */; };
-		B5BA46E41BFF682700EC5A0D /* SpeedLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5BA46E71BFF6A8D00EC5A0D /* SpeedLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46E61BFF6A8D00EC5A0D /* SpeedLog.swift */; };
+		B5BA46F71BFF753400EC5A0D /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA46F41BFF752800EC5A0D /* SpeedLog.framework */; };
+		B5BA46F81BFF753400EC5A0D /* SpeedLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA46F41BFF752800EC5A0D /* SpeedLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5BA46F31BFF752800EC5A0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5BA46EE1BFF752800EC5A0D /* SpeedLog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5BA46611BFF596B00EC5A0D;
+			remoteInfo = SpeedLog;
+		};
+		B5BA46F51BFF752800EC5A0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5BA46EE1BFF752800EC5A0D /* SpeedLog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5BA466B1BFF596C00EC5A0D;
+			remoteInfo = SpeedLogTests;
+		};
+		B5BA46F91BFF753400EC5A0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5BA46EE1BFF752800EC5A0D /* SpeedLog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B5BA46601BFF596B00EC5A0D;
+			remoteInfo = SpeedLog;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B5BA46D71BFF668700EC5A0D /* CopyFiles */ = {
@@ -28,13 +52,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		B5BA46E51BFF682700EC5A0D /* Embed Frameworks */ = {
+		B5BA46ED1BFF6FCB00EC5A0D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B5BA46E41BFF682700EC5A0D /* SpeedLog.framework in Embed Frameworks */,
+				B5BA46F81BFF753400EC5A0D /* SpeedLog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,8 +75,8 @@
 		B5BA46D11BFF666D00EC5A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BA46D91BFF668700EC5A0D /* Example-console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Example-console"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BA46DB1BFF668700EC5A0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SpeedLog.framework; path = "/Users/konstantin/My_Projects/MyPods/SpeedLog/Example/DerivedData/Example/Build/Products/Debug-iphoneos/SpeedLog.framework"; sourceTree = "<absolute>"; };
 		B5BA46E61BFF6A8D00EC5A0D /* SpeedLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeedLog.swift; path = ../../Source/SpeedLog.swift; sourceTree = "<group>"; };
+		B5BA46EE1BFF752800EC5A0D /* SpeedLog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpeedLog.xcodeproj; path = ../SpeedLog.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BA46E31BFF682700EC5A0D /* SpeedLog.framework in Frameworks */,
+				B5BA46F71BFF753400EC5A0D /* SpeedLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +101,7 @@
 		B5BA46AC1BFF663600EC5A0D = {
 			isa = PBXGroup;
 			children = (
-				B5BA46E21BFF682700EC5A0D /* SpeedLog.framework */,
+				B5BA46EE1BFF752800EC5A0D /* SpeedLog.xcodeproj */,
 				B5BA46C41BFF666D00EC5A0D /* Example-iOS */,
 				B5BA46DA1BFF668700EC5A0D /* Example-console */,
 				B5BA46B61BFF663600EC5A0D /* Products */,
@@ -115,6 +139,15 @@
 			path = "Example-console";
 			sourceTree = "<group>";
 		};
+		B5BA46EF1BFF752800EC5A0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA46F41BFF752800EC5A0D /* SpeedLog.framework */,
+				B5BA46F61BFF752800EC5A0D /* SpeedLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,11 +158,12 @@
 				B5BA46BF1BFF666D00EC5A0D /* Sources */,
 				B5BA46C01BFF666D00EC5A0D /* Frameworks */,
 				B5BA46C11BFF666D00EC5A0D /* Resources */,
-				B5BA46E51BFF682700EC5A0D /* Embed Frameworks */,
+				B5BA46ED1BFF6FCB00EC5A0D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B5BA46FA1BFF753400EC5A0D /* PBXTargetDependency */,
 			);
 			name = "Example-iOS";
 			productName = "Example-iOS";
@@ -182,6 +216,12 @@
 			mainGroup = B5BA46AC1BFF663600EC5A0D;
 			productRefGroup = B5BA46B61BFF663600EC5A0D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B5BA46EF1BFF752800EC5A0D /* Products */;
+					ProjectRef = B5BA46EE1BFF752800EC5A0D /* SpeedLog.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B5BA46C21BFF666D00EC5A0D /* Example-iOS */,
@@ -189,6 +229,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B5BA46F41BFF752800EC5A0D /* SpeedLog.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SpeedLog.framework;
+			remoteRef = B5BA46F31BFF752800EC5A0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B5BA46F61BFF752800EC5A0D /* SpeedLogTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpeedLogTests.xctest;
+			remoteRef = B5BA46F51BFF752800EC5A0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B5BA46C11BFF666D00EC5A0D /* Resources */ = {
@@ -223,6 +280,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5BA46FA1BFF753400EC5A0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpeedLog;
+			targetProxy = B5BA46F91BFF753400EC5A0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5BA46C91BFF666D00EC5A0D /* Main.storyboard */ = {
@@ -329,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DerivedData/Example/Build/Products/Debug-iphoneos",
@@ -347,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DerivedData/Example/Build/Products/Debug-iphoneos",
@@ -364,6 +431,7 @@
 		B5BA46DE1BFF668700EC5A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
