@@ -27,14 +27,14 @@ public struct LogMode : OptionSetType {
   public static var FuncName: LogMode    { return self.init(1 << 1) }
   public static var Line: LogMode        { return self.init(1 << 2) }
 
-//Helper
+  /// AllOptions - Enable all options, [FileName, FuncName, Line]
   public static var AllOptions: LogMode  { return [FileName, FuncName, Line] }
 }
 
 public struct SpeedLog {
   
   public static var mode: LogMode = LogMode.None
-  
+
   public static func print(items: Any..., separator: String = " ", terminator: String = "\n", _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
     #if ENABLE_LOG
       let prefix = printStringForMode(file, function: function, line: line)
