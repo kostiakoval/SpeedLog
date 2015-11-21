@@ -10,6 +10,7 @@ import Foundation
 
 typealias SLog = SpeedLog
 
+///LogMode type. Specify what details should be included to the log
 public struct LogMode : OptionSetType {
   
   private var value: UInt = 0
@@ -31,9 +32,10 @@ public struct LogMode : OptionSetType {
   public static var AllOptions: LogMode  { return [FileName, FuncName, Line] }
 }
 
+///SpeedLog Type
 public struct SpeedLog {
-  
-  public static var mode: LogMode = LogMode.None
+  /// Log Mode
+  public static var mode: LogMode = .None
 
   public static func print(items: Any..., separator: String = " ", terminator: String = "\n", _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
     #if ENABLE_LOG
@@ -44,11 +46,10 @@ public struct SpeedLog {
   }
 }
 
-private extension SpeedLog {
+extension SpeedLog {
 
   static func printStringForMode(file: String, function: String, line: Int) -> String {
     var result: String = ""
-    //print("\(filename).\(function)[\(line)]: \(object)")
     if mode.contains(.FileName) {
       let filename = file.lastPathComponent.stringByDeletingPathExtension
       result = "\(filename)."
@@ -68,6 +69,7 @@ private extension SpeedLog {
   }
 }
 
+/// String syntax sugar extension
 extension String {
     var ns: NSString {
         return self as NSString

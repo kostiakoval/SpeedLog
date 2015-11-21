@@ -11,19 +11,35 @@ import XCTest
 
 class SpeedLogTests: XCTestCase {
 
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+  func testEmptyPrefix() {
+    let prefix = logForMode(.None)
+    XCTAssertEqual(prefix, "")
   }
 
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
+  func testFilePrefix() {
+    let prefix = logForMode(.FileName)
+    XCTAssertEqual(prefix, "File.: ")
+    //FIXME: remove "." from string
   }
 
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+  func testFuncPrefix() {
+    let prefix = logForMode(.FuncName)
+    XCTAssertEqual(prefix, "FuncA: ")
   }
 
+  func testLinePrefix() {
+    let prefix = logForMode(.Line)
+    XCTAssertEqual(prefix, "[\(10)]: ")
+  }
 }
+
+// MARK: - Helpers
+extension SpeedLogTests {
+
+  func logForMode(mode: LogMode) -> String {
+    SpeedLog.mode = mode
+    return SpeedLog.printStringForMode("File", function: "FuncA", line: 10)
+  }
+}
+
+
