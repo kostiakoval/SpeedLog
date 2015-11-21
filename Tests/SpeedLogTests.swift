@@ -29,7 +29,12 @@ class SpeedLogTests: XCTestCase {
 
   func testLinePrefix() {
     let prefix = logForMode(.Line)
-    XCTAssertEqual(prefix, "[\(10)]: ")
+    XCTAssertEqual(prefix, "[10]: ")
+  }
+
+  func testAllOptionsPrefix() {
+    let prefix = logForMode(.AllOptions)
+    XCTAssertEqual(prefix, "File.FuncA[10]: ")
   }
 }
 
