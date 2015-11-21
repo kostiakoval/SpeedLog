@@ -43,7 +43,7 @@ extension SpeedLogTests {
 
   func logForMode(mode: LogMode) -> String {
     SpeedLog.mode = mode
-    return SpeedLog.printStringForMode("File", function: "FuncA", line: 10)
+    return SpeedLog.modePrefix("File", function: "FuncA", line: 10)
   }
 }
 
