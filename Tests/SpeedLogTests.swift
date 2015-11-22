@@ -32,6 +32,12 @@ class SpeedLogTests: XCTestCase {
     XCTAssertEqual(prefix, "[10]: ")
   }
 
+  func testDatePrefix() {
+    let prefix = logForMode(.Date)
+    XCTAssertEqual(prefix, "2015-01-10 06:44:43:060: ")
+  }
+
+
   func testAllOptionsPrefix() {
     let prefix = logForMode(.AllOptions)
     XCTAssertEqual(prefix, "File.FuncA[10]: ")
@@ -43,7 +49,21 @@ extension SpeedLogTests {
 
   func logForMode(mode: LogMode) -> String {
     SpeedLog.mode = mode
-    return SpeedLog.modePrefix("File", function: "FuncA", line: 10)
+    return SpeedLog.modePrefix(date, file:"File", function: "FuncA", line: 10)
+  }
+
+  var date: NSDate {
+    let components = NSDateComponents()
+    components.year = 2015
+    components.month = 1
+    components.day = 10
+
+    components.hour = 6
+    components.minute = 44
+    components.second = 43
+    components.nanosecond = 60000000 //100000 NSEC_PER_SEC
+
+    return NSCalendar.currentCalendar().dateFromComponents(components)!
   }
 }
 

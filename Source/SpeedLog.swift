@@ -20,13 +20,14 @@ public struct LogMode : OptionSetType {
   public init(_ value: UInt)         { self.value = value }
 
   //MARK:- Options
-  public static var None     = LogMode(rawValue: 0)
-  public static var FileName = LogMode(rawValue: 1 << 0)
-  public static var FuncName = LogMode(rawValue: 1 << 1)
-  public static var Line     = LogMode(rawValue: 1 << 2)
+  public static let None     = LogMode(rawValue: 0)
+  public static let FileName = LogMode(rawValue: 1 << 0)
+  public static let FuncName = LogMode(rawValue: 1 << 1)
+  public static let Line     = LogMode(rawValue: 1 << 2)
+  public static let Date     = LogMode(rawValue: 1 << 3)
 
   /// AllOptions - Enable all options, [FileName, FuncName, Line]
-  public static var AllOptions: LogMode = [FileName, FuncName, Line]
+  public static var AllOptions: LogMode = [Date, FileName, FuncName, Line]
 }
 
 
@@ -45,7 +46,7 @@ public struct SpeedLog {
 
   public static func print(items: Any..., separator: String = " ", terminator: String = "\n", _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
     #if !DISABLE_LOG
-      let prefix = modePrefix(file, function: function, line: line)
+      let prefix = modePrefix(NSDate(), file: file, function: function, line: line)
       let stringItem = items.map {"\($0)"} .joinWithSeparator(separator)
       Swift.print("\(prefix)\(stringItem)", terminator: terminator)
     #endif
@@ -57,11 +58,18 @@ extension SpeedLog {
   /**
    Creates an output string for the currect log Mode
   */
-  static func modePrefix(file: String, function: String, line: Int) -> String {
+  static func modePrefix(date: NSDate, file: String, function: String, line: Int) -> String {
     var result: String = ""
+    if mode.contains(.Date) {
+      let formatter = NSDateFormatter()
+      formatter.dateFormat = "yyyy-MM-dd HH:mm:ss:SSS"
+
+      let s = formatter.stringFromDate(date)
+      result += s
+    }
     if mode.contains(.FileName) {
       let filename = file.lastPathComponent.stringByDeletingPathExtension
-      result = "\(filename)."
+      result += "\(filename)."
     }
     if mode.contains(.FuncName) {
       result += "\(function)"
