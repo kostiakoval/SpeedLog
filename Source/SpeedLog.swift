@@ -44,7 +44,7 @@ public struct SpeedLog {
    */
 
   public static func print(items: Any..., separator: String = " ", terminator: String = "\n", _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
-    #if ENABLE_LOG
+    #if !DISABLE_LOG
       let prefix = modePrefix(file, function: function, line: line)
       let stringItem = items.map {"\($0)"} .joinWithSeparator(separator)
       Swift.print("\(prefix)\(stringItem)", terminator: terminator)

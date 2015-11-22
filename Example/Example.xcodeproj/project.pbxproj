@@ -431,7 +431,7 @@
 		B5BA46DE1BFF668700EC5A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_SWIFT_FLAGS = "-D ENABLE_LOG";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,6 +439,7 @@
 		B5BA46DF1BFF668700EC5A0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_SWIFT_FLAGS = "-D DISABLE_LOG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
