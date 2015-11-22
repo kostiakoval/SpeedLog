@@ -34,13 +34,18 @@ class SpeedLogTests: XCTestCase {
 
   func testDatePrefix() {
     let prefix = logForMode(.Date)
-    XCTAssertEqual(prefix, "2015-01-10 06:44:43:060: ")
+    XCTAssertEqual(prefix, "2015-01-10 06:44:43.060: ")
   }
 
+  func testFullCodeLocationPrefix() {
+    let prefix = logForMode(.FullCodeLocation)
+    XCTAssertEqual(prefix, "File.FuncA[10]: ")
+  }
 
   func testAllOptionsPrefix() {
     let prefix = logForMode(.AllOptions)
-    XCTAssertEqual(prefix, "File.FuncA[10]: ")
+    XCTAssertEqual(prefix, "2015-01-10 06:44:43.060 File.FuncA[10]: ")
+    //FIXME: add space between date and file
   }
 }
 

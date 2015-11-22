@@ -28,6 +28,8 @@ public struct LogMode : OptionSetType {
 
   /// AllOptions - Enable all options, [FileName, FuncName, Line]
   public static var AllOptions: LogMode = [Date, FileName, FuncName, Line]
+  public static var FullCodeLocation: LogMode = [FileName, FuncName, Line]
+
 }
 
 
@@ -62,7 +64,7 @@ extension SpeedLog {
     var result: String = ""
     if mode.contains(.Date) {
       let formatter = NSDateFormatter()
-      formatter.dateFormat = "yyyy-MM-dd HH:mm:ss:SSS"
+      formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS "
 
       let s = formatter.stringFromDate(date)
       result += s
@@ -79,6 +81,7 @@ extension SpeedLog {
     }
 
     if !result.isEmpty {
+      result = result.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
       result += ": "
     }
 
