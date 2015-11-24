@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     myFunc()
+    colorLog()
     return true
   }
 
@@ -33,6 +34,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     SpeedLog.mode = [.FuncName, .FileName, .Line]
     SpeedLog.print("Show all 3 options :)")
+  }
+
+  func colorLog() {
+    let c = UIColor.redColor()
+    print("Original:", c)
+
+    UIColor.swizzleDesription()
+    print("Swizzleed:", c)
+
+    UIColor.undoDesriptionSwizzling()
+    print("Original Restored:", c)
   }
 }
 
