@@ -16,6 +16,8 @@ The SpeedLog allows you to remove `print` when the logs are disabled. This allow
 - [x] Improves Swift code optimization
 - [x] Easy to disable
 - [x] Reach formatting 
+- [x] Coloured console output
+- [x] Custom `UIColor` representation 
 
 ## Usage
 
@@ -83,6 +85,13 @@ github "kostiakoval/SpeedLog"
 ### Manual
 
 Copy the `SpeedLog.swift` file into your project
+
+### Colors
+
+In order to use colorised console you need to install [XcodeColors](https://github.com/robbiehanson/XcodeColors) Xcode plugin.  
+Use [Alcatraz](http://alcatraz.io) to install it. Go to:  
+Xcode -> Window -> Package Manager -> Search for `XcodeColors` and install it
+
 
 ## Future Features
 There are many logging libs I like:
