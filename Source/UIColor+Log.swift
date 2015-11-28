@@ -9,17 +9,17 @@
 import UIKit
 
 // MARK: - Decription Swizzling
-public extension UIColor {
+extension UIColor {
 
   /// Swizzle description method with own colorDescription.
   /// colorDescription will used instead of description
-  public class func swizzleDescription() {
+  class func swizzleDescription() {
     let instance = UIColor.redColor()
     instance.swizzleMethods("description", withSelector: "colorDescription")
   }
 
   /// Restore back original description method
-  public class func undoDesriptionSwizzling() {
+  class func undoDesriptionSwizzling() {
     let instance = UIColor.redColor()
     instance.swizzleMethods("colorDescription", withSelector: "description")
   }

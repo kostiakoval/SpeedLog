@@ -53,9 +53,7 @@ public struct SpeedLog {
 
 extension SpeedLog {
 
-  /**
-   Creates an output string for the currect log Mode
-  */
+  /// Create an output string for the currect log Mode
   static func modePrefix(date: NSDate, file: String, function: String, line: Int) -> String {
     var result: String = ""
     if mode.contains(.Date) {
@@ -82,6 +80,21 @@ extension SpeedLog {
     }
 
     return result
+  }
+}
+
+// MARK: - ColorLog
+
+public extension SpeedLog {
+
+  /// Use custom UIColor desription
+  static func enableVisualColorLog() {
+    UIColor.swizzleDescription()
+  }
+
+  /// Restore default UIColor desription
+  static func disableVisualColorLog() {
+    UIColor.undoDesriptionSwizzling()
   }
 }
 
