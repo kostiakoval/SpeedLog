@@ -13,11 +13,8 @@ typealias SLog = SpeedLog
 ///LogMode type. Specify what details should be included to the log
 public struct LogMode : OptionSetType {
 
-  private var value: UInt = 0
-  public var rawValue: UInt { return value }
-
-  public init(rawValue value: UInt)  { self.value = value }
-  public init(_ value: UInt)         { self.value = value }
+  public let rawValue: UInt
+  public init(rawValue: UInt)  { self.rawValue = rawValue }
 
   //MARK:- Options
   public static let None     = LogMode(rawValue: 0)
@@ -27,8 +24,8 @@ public struct LogMode : OptionSetType {
   public static let Date     = LogMode(rawValue: 1 << 3)
 
   /// AllOptions - Enable all options, [FileName, FuncName, Line]
-  public static var AllOptions: LogMode = [Date, FileName, FuncName, Line]
-  public static var FullCodeLocation: LogMode = [FileName, FuncName, Line]
+  public static let AllOptions: LogMode = [Date, FileName, FuncName, Line]
+  public static let FullCodeLocation: LogMode = [FileName, FuncName, Line]
 
 }
 

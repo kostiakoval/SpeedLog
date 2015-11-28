@@ -12,24 +12,6 @@ protocol ColorType {
   var colorCode: String { get }
 }
 
-struct RGBColor {
-  let R: Int
-  let G: Int
-  let B: Int
-}
-
-extension RGBColor: CustomStringConvertible {
-  var description: String {
-    return "RGB: \(R), \(G), \(B)"
-  }
-}
-
-extension RGBColor: ColorType {
-
-  var colorCode: String {
-    return "\(R),\(G),\(B)"
-  }
-}
 
 
 struct LogColors {

@@ -8,18 +8,44 @@
 
 import UIKit
 
+// MARK: - Decription Swizzling
 public extension UIColor {
-  public class func swizzleDesription() {
-    let instance: UIColor = UIColor.redColor()
+
+  /// Swizzle description method with own colorDescription.
+  /// colorDescription will used instead of description
+  public class func swizzleDescription() {
+    let instance = UIColor.redColor()
     instance.swizzleMethods("description", withSelector: "colorDescription")
   }
 
+  /// Restore back original description method
   public class func undoDesriptionSwizzling() {
-    let instance: UIColor = UIColor.redColor()
+    let instance = UIColor.redColor()
     instance.swizzleMethods("colorDescription", withSelector: "description")
   }
 }
 
+// MARK: - RGGColor
+public struct RGBColor {
+  let R: Int
+  let G: Int
+  let B: Int
+}
+
+extension RGBColor: CustomStringConvertible {
+  public var description: String {
+    return "RGB: \(R), \(G), \(B)"
+  }
+}
+
+extension RGBColor: ColorType {
+  //Color representation for XcodeColors console log
+  var colorCode: String {
+    return "\(R),\(G),\(B)"
+  }
+}
+
+// MARK: - UIColor
 extension UIColor {
 
   var rgbColor: RGBColor {
