@@ -38,7 +38,7 @@ extension RGBColor: CustomStringConvertible {
   }
 }
 
-extension RGBColor: ColorType {
+extension RGBColor: RGBColorType {
   //Color representation for XcodeColors console log
   var colorCode: String {
     return "\(R),\(G),\(B)"
@@ -60,7 +60,7 @@ extension UIColor {
 
   func colorDescription() -> String {
     let color = rgbColor
-    return "\(color) - " + LogColors.background(color, object: " ")
+    return "\(color) - " + ColorLog.background(color, object: " ")
   }
 }
 

@@ -12,7 +12,8 @@
 		B5BA46711BFF596C00EC5A0D /* SpeedLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46701BFF596C00EC5A0D /* SpeedLogTests.swift */; };
 		B5BA46851BFF625500EC5A0D /* SpeedLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BA46821BFF625500EC5A0D /* SpeedLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5BA46861BFF625500EC5A0D /* SpeedLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46831BFF625500EC5A0D /* SpeedLog.swift */; };
-		B5FB59961C039E2C00B12B4D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB59951C039E2C00B12B4D /* Colors.swift */; };
+		B5CD588C1C09E71D00E4238C /* ColorLogTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD588B1C09E71D00E4238C /* ColorLogTest.swift */; };
+		B5FB59961C039E2C00B12B4D /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB59951C039E2C00B12B4D /* ColorLog.swift */; };
 		B5FB59981C039F1E00B12B4D /* UIColor+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB59971C039F1E00B12B4D /* UIColor+Log.swift */; };
 		B5FB599B1C04F07C00B12B4D /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB599A1C04F07C00B12B4D /* Swizzling.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +37,8 @@
 		B5BA46811BFF625500EC5A0D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BA46821BFF625500EC5A0D /* SpeedLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedLog.h; sourceTree = "<group>"; };
 		B5BA46831BFF625500EC5A0D /* SpeedLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedLog.swift; sourceTree = "<group>"; };
-		B5FB59951C039E2C00B12B4D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B5CD588B1C09E71D00E4238C /* ColorLogTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorLogTest.swift; sourceTree = "<group>"; };
+		B5FB59951C039E2C00B12B4D /* ColorLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorLog.swift; sourceTree = "<group>"; };
 		B5FB59971C039F1E00B12B4D /* UIColor+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Log.swift"; sourceTree = "<group>"; };
 		B5FB599A1C04F07C00B12B4D /* Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BA46701BFF596C00EC5A0D /* SpeedLogTests.swift */,
+				B5CD588B1C09E71D00E4238C /* ColorLogTest.swift */,
 				B518B4481C078F8900C6DA04 /* LogModeTests.swift */,
 				B5BA46721BFF596C00EC5A0D /* Info.plist */,
 			);
@@ -92,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BA46831BFF625500EC5A0D /* SpeedLog.swift */,
-				B5FB59951C039E2C00B12B4D /* Colors.swift */,
+				B5FB59951C039E2C00B12B4D /* ColorLog.swift */,
 				B5FB59971C039F1E00B12B4D /* UIColor+Log.swift */,
 				B5FB599A1C04F07C00B12B4D /* Swizzling.swift */,
 				B5BA46871BFF627400EC5A0D /* Supporting Files */,
@@ -219,7 +222,7 @@
 			files = (
 				B5BA46861BFF625500EC5A0D /* SpeedLog.swift in Sources */,
 				B5FB59981C039F1E00B12B4D /* UIColor+Log.swift in Sources */,
-				B5FB59961C039E2C00B12B4D /* Colors.swift in Sources */,
+				B5FB59961C039E2C00B12B4D /* ColorLog.swift in Sources */,
 				B5FB599B1C04F07C00B12B4D /* Swizzling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CD588C1C09E71D00E4238C /* ColorLogTest.swift in Sources */,
 				B5BA46711BFF596C00EC5A0D /* SpeedLogTests.swift in Sources */,
 				B518B4491C078F8900C6DA04 /* LogModeTests.swift in Sources */,
 			);

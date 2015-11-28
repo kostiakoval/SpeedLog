@@ -26,7 +26,6 @@ public struct LogMode : OptionSetType {
   /// AllOptions - Enable all options, [FileName, FuncName, Line]
   public static let AllOptions: LogMode = [Date, FileName, FuncName, Line]
   public static let FullCodeLocation: LogMode = [FileName, FuncName, Line]
-
 }
 
 
