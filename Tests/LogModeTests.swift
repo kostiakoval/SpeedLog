@@ -26,4 +26,9 @@ class LogModeTests: XCTestCase {
 
     XCTAssertEqual(uniqueValues.count, rawValues.count)
   }
+
+  func testAggregationCase() {
+    XCTAssertEqual(LogMode.FullCodeLocation, [.FileName, .FuncName, .Line])
+    XCTAssertEqual(LogMode.AllOptions, [.Date, .FileName, .FuncName, .Line])
+  }
 }
