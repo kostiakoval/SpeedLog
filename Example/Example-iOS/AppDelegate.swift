@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     myFunc()
+    colorLog()
     return true
   }
 
@@ -32,7 +33,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     SpeedLog.print("Show FunctionName and File name")
 
     SpeedLog.mode = [.FuncName, .FileName, .Line]
+    SpeedLog.print("Show 3 options :)")
+
+    SpeedLog.mode = .FullCodeLocation
+    SpeedLog.print("Show fullCode, same as above")
+
+    SpeedLog.mode = [.Date, .FuncName, .FileName, .Line]
     SpeedLog.print("Show all 3 options :)")
+  }
+
+  func colorLog() {
+    SpeedLog.mode = .None
+    SpeedLog.print("\nNice UIColor :) \n")
+    let c = UIColor.redColor()
+    print("Original:", c)
+
+    SpeedLog.enableVisualColorLog()
+    SpeedLog.print("Visual:", c)
+
+    SpeedLog.disableVisualColorLog()
+    SpeedLog.print("Original Restored:", c)
   }
 }
 
