@@ -53,6 +53,7 @@ SpeedLog.print("Enable All Features")
 ### UIColor log
 `SpeedLog` has nice `UIColor` log style.  
 All you need to do is enable it once by calling `SpeedLog.enableVisualColorLog()`  
+
 ![](/Images/RGB-colors-log.png)  
 
 ```swift
@@ -62,7 +63,7 @@ SpeedLog.print("Visual:", c)
 SpeedLog.disableVisualColorLog()
 SpeedLog.print("Original Restored:", c)
 ```
-
+P.S - You also need to install [XcodeColors](https://github.com/robbiehanson/XcodeColors) Xcode Plugin. Use [Alcatraz](http://alcatraz.io) to install it.
 
 ###Enables Log
 
