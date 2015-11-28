@@ -50,6 +50,19 @@ SpeedLog.mode = .AllOptions
 SpeedLog.print("Enable All Features")
 //2015-11-26 19:32:33.687 AppDelegate.myFunc()[27]: Enable All Features
 ```
+### UIColor log
+SpeedLog has nice UIColor representation in Console
+
+![](/Images/RGB-colors-log.png)  
+
+```swift
+SpeedLog.enableVisualColorLog()
+SpeedLog.print("Visual:", c)
+
+SpeedLog.disableVisualColorLog()
+SpeedLog.print("Original Restored:", c)
+```
+
 
 ###Enables Log
 

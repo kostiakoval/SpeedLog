@@ -49,10 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     print("Original:", c)
 
     SpeedLog.enableVisualColorLog()
-    print("Visual:", c)
+    SpeedLog.print("Visual:", c)
 
     SpeedLog.disableVisualColorLog()
-    print("Original Restored:", c)
+    SpeedLog.print("Original Restored:", c)
   }
 }
 
