@@ -55,7 +55,7 @@ extension UIColor {
     var alpha: CGFloat = 0
 
     getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-    return RGBColor(R: Int(red) * 255, G: Int(green) * 255, B: Int(blue) * 255)
+    return RGBColor(R: Int(red * 255), G: Int(green * 255), B: Int(blue * 255))
   }
 
   func colorDescription() -> String {
