@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SpeedLog"
-  s.version          = "0.1.4"
+  s.version          = "0.2.1"
   s.summary          = "SpeedLog - Swift fast debug logs, improves code optimization"
   s.description      = <<-DESC
                         SpeedLog can be easily disabled and removed for the release build.
