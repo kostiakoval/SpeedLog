@@ -22,5 +22,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Source/*.swift'
+  s.watchos.exclude_files = "Source/UIKit"
+
   s.pod_target_xcconfig = { 'OTHER_SWIFT_FLAGS' => '-D ENABLE_LOG' }
 end

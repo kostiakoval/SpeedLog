@@ -83,21 +83,6 @@ extension SpeedLog {
   }
 }
 
-// MARK: - ColorLog
-
-public extension SpeedLog {
-
-  /// Use custom UIColor desription
-  static func enableVisualColorLog() {
-    UIColor.swizzleDescription()
-  }
-
-  /// Restore default UIColor desription
-  static func disableVisualColorLog() {
-    UIColor.undoDesriptionSwizzling()
-  }
-}
-
 /// String syntax sugar extension
 extension String {
     var ns: NSString {

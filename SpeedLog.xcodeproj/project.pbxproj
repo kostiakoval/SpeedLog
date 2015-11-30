@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		B518B4491C078F8900C6DA04 /* LogModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518B4481C078F8900C6DA04 /* LogModeTests.swift */; };
 		B57072181C0CD58A004E8FE1 /* UIColor+LogTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57072171C0CD58A004E8FE1 /* UIColor+LogTest.swift */; };
+		B570721B1C0CE05B004E8FE1 /* UIColor+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570721A1C0CE05B004E8FE1 /* UIColor+Log.swift */; };
+		B570721D1C0CE153004E8FE1 /* SpeedLog+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570721C1C0CE153004E8FE1 /* SpeedLog+UIColor.swift */; };
 		B5BA466C1BFF596C00EC5A0D /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA46611BFF596B00EC5A0D /* SpeedLog.framework */; };
 		B5BA46711BFF596C00EC5A0D /* SpeedLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46701BFF596C00EC5A0D /* SpeedLogTests.swift */; };
 		B5BA46851BFF625500EC5A0D /* SpeedLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BA46821BFF625500EC5A0D /* SpeedLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5BA46861BFF625500EC5A0D /* SpeedLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BA46831BFF625500EC5A0D /* SpeedLog.swift */; };
 		B5CD588C1C09E71D00E4238C /* ColorLogTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD588B1C09E71D00E4238C /* ColorLogTest.swift */; };
 		B5FB59961C039E2C00B12B4D /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB59951C039E2C00B12B4D /* ColorLog.swift */; };
-		B5FB59981C039F1E00B12B4D /* UIColor+Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB59971C039F1E00B12B4D /* UIColor+Log.swift */; };
 		B5FB599B1C04F07C00B12B4D /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB599A1C04F07C00B12B4D /* Swizzling.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		B518B4481C078F8900C6DA04 /* LogModeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogModeTests.swift; sourceTree = "<group>"; };
 		B57072171C0CD58A004E8FE1 /* UIColor+LogTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+LogTest.swift"; sourceTree = "<group>"; };
+		B570721A1C0CE05B004E8FE1 /* UIColor+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Log.swift"; sourceTree = "<group>"; };
+		B570721C1C0CE153004E8FE1 /* SpeedLog+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpeedLog+UIColor.swift"; sourceTree = "<group>"; };
 		B5BA46611BFF596B00EC5A0D /* SpeedLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeedLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BA466B1BFF596C00EC5A0D /* SpeedLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BA46701BFF596C00EC5A0D /* SpeedLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLogTests.swift; sourceTree = "<group>"; };
@@ -41,7 +44,6 @@
 		B5BA46831BFF625500EC5A0D /* SpeedLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedLog.swift; sourceTree = "<group>"; };
 		B5CD588B1C09E71D00E4238C /* ColorLogTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorLogTest.swift; sourceTree = "<group>"; };
 		B5FB59951C039E2C00B12B4D /* ColorLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorLog.swift; sourceTree = "<group>"; };
-		B5FB59971C039F1E00B12B4D /* UIColor+Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Log.swift"; sourceTree = "<group>"; };
 		B5FB599A1C04F07C00B12B4D /* Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B57072191C0CE05B004E8FE1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B570721A1C0CE05B004E8FE1 /* UIColor+Log.swift */,
+				B570721C1C0CE153004E8FE1 /* SpeedLog+UIColor.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		B5BA46571BFF596B00EC5A0D = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +108,9 @@
 		B5BA46801BFF625500EC5A0D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				B57072191C0CE05B004E8FE1 /* UIKit */,
 				B5BA46831BFF625500EC5A0D /* SpeedLog.swift */,
 				B5FB59951C039E2C00B12B4D /* ColorLog.swift */,
-				B5FB59971C039F1E00B12B4D /* UIColor+Log.swift */,
 				B5FB599A1C04F07C00B12B4D /* Swizzling.swift */,
 				B5BA46871BFF627400EC5A0D /* Supporting Files */,
 			);
@@ -224,9 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BA46861BFF625500EC5A0D /* SpeedLog.swift in Sources */,
-				B5FB59981C039F1E00B12B4D /* UIColor+Log.swift in Sources */,
 				B5FB59961C039E2C00B12B4D /* ColorLog.swift in Sources */,
+				B570721D1C0CE153004E8FE1 /* SpeedLog+UIColor.swift in Sources */,
 				B5FB599B1C04F07C00B12B4D /* Swizzling.swift in Sources */,
+				B570721B1C0CE05B004E8FE1 /* UIColor+Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
