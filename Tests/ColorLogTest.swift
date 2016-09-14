@@ -10,7 +10,7 @@ import XCTest
 @testable import SpeedLog
 
 class ColorLogTest: XCTestCase {
-    let redRGB = UIColor.redColor().rgbColor
+    let redRGB = UIColor.red.rgbColor
 
    func testFont() {
     let redString = ColorLog.font(redRGB, object: "Hi")

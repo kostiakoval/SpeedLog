@@ -11,7 +11,7 @@ import Foundation
 typealias SLog = SpeedLog
 
 ///LogMode type. Specify what details should be included to the log
-public struct LogMode : OptionSetType {
+public struct LogMode : OptionSet {
 
   public let rawValue: UInt
   public init(rawValue: UInt)  { self.rawValue = rawValue }
@@ -42,10 +42,10 @@ public struct SpeedLog {
    - parameter terminator: a character inserted at the end of output.
    */
 
-  public static func print(items: Any..., separator: String = " ", terminator: String = "\n", _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__) {
+  public static func print(_ items: Any..., separator: String = " ", terminator: String = "\n", _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
     #if !DISABLE_LOG
-      let prefix = modePrefix(NSDate(), file: file, function: function, line: line)
-      let stringItem = items.map {"\($0)"} .joinWithSeparator(separator)
+      let prefix = modePrefix(Date(), file: file, function: function, line: line)
+      let stringItem = items.map {"\($0)"} .joined(separator: separator)
       Swift.print("\(prefix)\(stringItem)", terminator: terminator)
     #endif
   }
@@ -54,13 +54,13 @@ public struct SpeedLog {
 extension SpeedLog {
 
   /// Create an output string for the currect log Mode
-  static func modePrefix(date: NSDate, file: String, function: String, line: Int) -> String {
+  static func modePrefix(_ date: Date, file: String, function: String, line: Int) -> String {
     var result: String = ""
     if mode.contains(.Date) {
-      let formatter = NSDateFormatter()
+      let formatter = DateFormatter()
       formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS "
 
-      let s = formatter.stringFromDate(date)
+      let s = formatter.string(from: date)
       result += s
     }
     if mode.contains(.FileName) {
@@ -75,7 +75,7 @@ extension SpeedLog {
     }
 
     if !result.isEmpty {
-      result = result.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+      result = result.trimmingCharacters(in: CharacterSet.whitespaces)
       result += ": "
     }
 
@@ -92,6 +92,6 @@ extension String {
         return ns.lastPathComponent
     }
     var stringByDeletingPathExtension: String {
-        return ns.stringByDeletingPathExtension
+        return ns.deletingPathExtension
     }
 }

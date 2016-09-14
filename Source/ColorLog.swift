@@ -18,8 +18,8 @@ protocol RGBColorType {
 
 struct ColorLog {
   struct Key {
-    private static let Escape = "\u{001b}["
-    private static let Fg = "fg"
+    fileprivate static let Escape = "\u{001b}["
+    fileprivate static let Fg = "fg"
     static let Bg = "bg"
 
     static let StartFg = "\(Escape)\(Fg)"
@@ -31,17 +31,17 @@ struct ColorLog {
   }
 
   /// String with a Font color
-  static func font<T>(color: RGBColorType, object: T) -> String {
+  static func font<T>(_ color: RGBColorType, object: T) -> String {
      return "\(Key.StartFg)\(color.colorCode);\(object)\(Key.Reset)"
   }
 
   /// String with a Background color
-  static func background<T>(color: RGBColorType, object: T) -> String {
+  static func background<T>(_ color: RGBColorType, object: T) -> String {
     return "\(Key.StartBg)\(color.colorCode);\(object)\(Key.Reset)"
   }
 
   /// String with both Background and Font color
-  static func colored<T>(font: RGBColorType, background: RGBColorType, object: T) -> String {
+  static func colored<T>(_ font: RGBColorType, background: RGBColorType, object: T) -> String {
     let string =
       "\(Key.Escape)fg\(font.colorCode);" +
       "\(Key.Escape)bg\(background.colorCode);" +

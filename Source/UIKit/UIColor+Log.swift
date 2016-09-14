@@ -14,14 +14,14 @@ extension UIColor {
   /// Swizzle description method with own colorDescription.
   /// colorDescription will used instead of description
   class func swizzleDescription() {
-    let instance = UIColor.redColor()
-    instance.swizzleMethods("description", withSelector: "colorDescription")
+    let instance = UIColor.red
+    instance.swizzleMethods(#selector(getter: NSObjectProtocol.description), withSelector: #selector(UIColor.colorDescription))
   }
 
   /// Restore back original description method
   class func undoDesriptionSwizzling() {
-    let instance = UIColor.redColor()
-    instance.swizzleMethods("colorDescription", withSelector: "description")
+    let instance = UIColor.red
+    instance.swizzleMethods(#selector(UIColor.colorDescription), withSelector: #selector(getter: NSObjectProtocol.description))
   }
 }
 

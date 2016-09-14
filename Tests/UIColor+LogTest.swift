@@ -17,10 +17,10 @@ class UIColorLogTest: XCTestCase {
   }
 
   func testUIColorRgb() {
-    let redRGB = UIColor.redColor().rgbColor
+    let redRGB = UIColor.red.rgbColor
     XCTAssertEqual(redRGB.colorCode, "255,0,0")
 
-    let purpleRGB = UIColor.purpleColor().rgbColor
+    let purpleRGB = UIColor.purple.rgbColor
     XCTAssertEqual(purpleRGB.colorCode, "127,0,127")
   }
 }
