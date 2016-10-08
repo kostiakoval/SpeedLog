@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     myFunc()
     colorLog()
     return true
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func colorLog() {
     SpeedLog.mode = .None
     SpeedLog.print("\nNice UIColor :) \n")
-    let c = UIColor.redColor()
+    let c = UIColor.red
     print("Original:", c)
 
     SpeedLog.enableVisualColorLog()

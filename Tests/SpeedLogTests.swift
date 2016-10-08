@@ -52,13 +52,13 @@ class SpeedLogTests: XCTestCase {
 // MARK: - Helpers
 extension SpeedLogTests {
 
-  func logForMode(mode: LogMode) -> String {
+  func logForMode(_ mode: LogMode) -> String {
     SpeedLog.mode = mode
     return SpeedLog.modePrefix(date, file:"File", function: "FuncA", line: 10)
   }
 
-  var date: NSDate {
-    let components = NSDateComponents()
+  var date: Date {
+    var components = DateComponents()
     components.year = 2015
     components.month = 1
     components.day = 10
@@ -68,7 +68,7 @@ extension SpeedLogTests {
     components.second = 43
     components.nanosecond = 60000000 //100000 NSEC_PER_SEC
 
-    return NSCalendar.currentCalendar().dateFromComponents(components)!
+    return Calendar.current.date(from: components)!
   }
 }
 
