@@ -1,5 +1,5 @@
 # SpeedLog - 🚀🐌  
-[![CI Status](http://img.shields.io/travis/kostiakoval/SpeedLog.svg?style=flat)](https://travis-ci.org/kostiakoval/Mirror)
+[![CI Status](http://img.shields.io/travis/kostiakoval/SpeedLog.svg?style=flat)](https://travis-ci.org/kostiakoval/SpeedLog)
 [![Version](https://img.shields.io/cocoapods/v/SpeedLog.svg?style=flat)](http://cocoapods.org/pods/SpeedLog)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/SpeedLog.svg?style=flat)](http://cocoapods.org/pods/SpeedLog)
