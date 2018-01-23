@@ -65,9 +65,9 @@ SpeedLog.print("Original Restored:", c)
 ```
 P.S - You also need to install [XcodeColors](https://github.com/robbiehanson/XcodeColors) Xcode Plugin. Use [Alcatraz](http://alcatraz.io) to install it.
 
-###Enables Log
+### Enable Log
 
-To enables logs you need to add a Swift Compiler `ENABLE_LOG` flag   
+To enable logs you need to add a Swift Compiler `ENABLE_LOG` flag   
 
 1. Go to: Build Settings -> Swift Compiler - Custom Flags  
 2. Add `-D ENABLE_LOG` flag   
@@ -77,7 +77,7 @@ If you use use `CocoaPods` or `Carthage` you need to enable it for `SpeedLog` fr
 See more details at [Stackoverflow](http://stackoverflow.com/a/24112024/1838875)
 
 ## Installation
-###[CocoaPods](http://cocoapods.org)
+### [CocoaPods](http://cocoapods.org)
 
 To install it, simply add the following line to your Podfile:
 
@@ -86,7 +86,7 @@ use_frameworks!
 pod "SpeedLog"
 ```
 
-###[Carthage](https://github.com/Carthage/Carthage)
+### [Carthage](https://github.com/Carthage/Carthage)
 
 To integrate SpeedLog into your Xcode project using Carthage, specify it in your Cartfile:
 
